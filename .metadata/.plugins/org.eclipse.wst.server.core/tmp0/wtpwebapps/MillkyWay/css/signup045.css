@@ -1,0 +1,34 @@
+.duplication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  color: #222;
+  text-align: center;
+}
+.duplication > h1 {
+  padding: 20px;
+  font-size: 25px;
+  line-height: 1.8;
+}
+.duplication > h1 > span {
+  color: #1a6080;
+}
+.duplication > button {
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 40px auto 20px;
+  background-color: #b6e2f7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.duplication > button:hover {
+  background-color: #addef6;
+}/*# sourceMappingURL=signup045.css.map */

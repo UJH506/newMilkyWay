@@ -1,0 +1,674 @@
+@charset "UTF-8";
+#wrap > header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom: 2px solid #33afe9;
+  border-top: 1px solid transparent;
+  z-index: 800;
+}
+#wrap > header > .headTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #33afe9;
+}
+#wrap > header > .headTop > .frame {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 40px;
+  margin: 1px auto 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#wrap > header > .headTop > .frame > .topGnb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+#wrap > header > .headTop > .frame > .topGnb > li {
+  width: 120px;
+  height: 40px;
+  background-color: #33afe9;
+}
+#wrap > header > .headTop > .frame > .topGnb > li.on, #wrap > header > .headTop > .frame > .topGnb > li:hover {
+  background-color: #fff;
+}
+#wrap > header > .headTop > .frame > .topGnb > li.on > a, #wrap > header > .headTop > .frame > .topGnb > li:hover > a {
+  color: #1a6080;
+}
+#wrap > header > .headTop > .frame > .topGnb > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+#wrap > header > .headTop > .frame > .topGnb > li > .underNav {
+  display: none;
+  position: absolute;
+  top: 41px;
+  left: calc((100% - 1200px) / 2);
+  z-index: 300;
+  width: 1200px;
+  height: auto;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+#wrap > header > .headTop > .frame > .topGnb > li:hover > .underNav {
+  display: none;
+}
+#wrap > header > .headTop > .frame .userBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+}
+#wrap > header > .headTop > .frame .userBar > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+#wrap > header > .headTop > .frame .userBar > li > a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+#wrap > header > .headTop > .frame .userBar > li > a > .arrow {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+}
+#wrap > header > .headTop > .frame .userBar > li > .myPageList {
+  display: none;
+}
+#wrap > header > .headTop > .frame .userBar > li > .myPageList > li {
+  line-height: 25px;
+}
+#wrap > header > .headTop > .frame .userBar > li > .myPageList > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap > header > .headTop > .frame .userBar > li > .myPageList > li > a:hover {
+  font-weight: 600;
+}
+#wrap > header > .headTop > .frame .userBar > li:hover:has(.arrow) > .myPageList,
+#wrap > header > .headTop > .frame .userBar > li > .myPageList:hover {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  left: -10px;
+  width: 120px;
+  padding: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0 #666;
+  box-sizing: border-box;
+}
+#wrap > header > .headMiddle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#wrap > header > .headMiddle > h1 {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+#wrap > header > .headMiddle > .searchFrame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  height: 40px;
+  margin: 0 auto;
+  border: 3px solid #33afe9;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+#wrap > header > .headMiddle > .searchFrame.searched {
+  border-radius: 20px 20px 0 0;
+}
+#wrap > header > .headMiddle > .searchFrame > p.searchId {
+  width: 80px;
+  height: 40px;
+  color: #1a6080;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+#wrap > header > .headMiddle > .searchFrame > form {
+  flex: 1 1 auto;
+}
+#wrap > header > .headMiddle > .searchFrame > form > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+}
+#wrap > header > .headMiddle > .searchFrame > span {
+  display: none;
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #33afe9;
+  cursor: pointer;
+}
+#wrap > header > .headMiddle > .searchFrame > span.visible {
+  display: block;
+}
+#wrap > header > .headMiddle > .searchedList {
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  width: 500px;
+  height: auto;
+}
+#wrap > header > .headMiddle > .searchedList > li {
+  background-color: #fff;
+  border: 3px solid #33afe9;
+  box-sizing: border-box;
+}
+#wrap > header > .headMiddle > .searchedList > li:last-child {
+  border-radius: 0 0 20px 20px;
+}
+#wrap > header > .headMiddle > .searchedList > li > p {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+#wrap > header > .headMiddle > .searchedList > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#wrap > header > .headMiddle > .searchedList > li > a > img {
+  height: 80px;
+}
+#wrap > header > .headMiddle > .searchedList > li > a > .title {
+  width: 30%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+#wrap > header > .headMiddle > .searchedList > li > a > .author {
+  width: 30%;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+#wrap > header > .headMiddle > .searchedList > li > a > .genre {
+  width: 10%;
+  color: #666;
+}
+#wrap > header > .headMiddle > .searchList {
+  display: none;
+}
+#wrap > header > .headMiddle:has(p.searchId:hover) > .searchList,
+#wrap > header > .headMiddle > .searchList:hover {
+  display: block;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: calc(50% - 250px);
+  padding: 0 10px;
+  background-color: #fff;
+  border: 2px solid #1a6080;
+  box-sizing: border-box;
+}
+#wrap > header > .headMiddle:has(p.searchId:hover) > .searchList > li,
+#wrap > header > .headMiddle > .searchList:hover > li {
+  margin: 5px;
+  color: #33afe9;
+  cursor: pointer;
+}
+#wrap > header > .headMiddle > img.logo {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 100px;
+  width: 100px;
+  height: 50px;
+}
+#wrap header.scrolled > .headTop {
+  position: absolute;
+  top: -100%;
+}
+#wrap header.scrolled > .headMiddle {
+  height: 50px;
+  margin-top: 0px;
+}
+
+aside {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+aside > i {
+  display: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 0;
+  background-color: #b6e2f7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+aside > i.on {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 30px;
+}
+aside > .searchAPIFrame {
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  background-color: #03c75a;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+aside > .searchAPIFrame.on {
+  display: block;
+}
+aside > .searchAPIFrame > form[name=bookSearchAPIFrm] {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+aside > .searchAPIFrame > form[name=bookSearchAPIFrm] > input {
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+}
+aside > .searchAPIFrame > form[name=bookSearchAPIFrm] > button {
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+}
+aside > .searchAPIFrame > .APISearchedList > li {
+  width: 380px;
+  height: 100px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+aside > .searchAPIFrame > .APISearchedList > li > a {
+  display: flex;
+  justify-content: space-between;
+}
+aside > .searchAPIFrame > .APISearchedList > li > a > img {
+  width: 60px;
+  height: 90px;
+}
+aside > .searchAPIFrame > .APISearchedList > li > a > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  width: 300px;
+  height: 90px;
+}
+aside > .searchAPIFrame > .APISearchedList > li > a > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+aside > .searchAPIFrame > .APISearchedList > li > a > div > .description {
+  width: 300px;
+  height: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+footer {
+  width: 100%;
+  min-width: 1200px;
+  height: 100px;
+  margin-bottom: 50px;
+  background-color: #aaa;
+}
+footer > address {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.buy {
+  width: 1200px;
+  margin: 0 auto;
+}
+section.buy button {
+  border: none;
+  background: none;
+  outline: none;
+}
+section.buy h2 {
+  padding: 20px 0 10px;
+}
+section.buy > form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+section.buy > form > .payment-info {
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+section.buy > form > .payment-info > li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 10px 0 20px;
+  padding: 30px 20px;
+  border: 1px solid #b6e2f7;
+  border-radius: 10px;
+}
+section.buy > form > .payment-info > li:nth-of-type(2) > ol > li:nth-of-type(3) {
+  display: flex;
+  flex-flow: row nowrap;
+}
+section.buy > form > .payment-info > li > h3, section.buy > form > .payment-info > li .check-same {
+  width: 30%;
+}
+section.buy > form > .payment-info > li > h3 > span {
+  font-weight: 500;
+  font-size: 14px;
+}
+section.buy > form > .payment-info > li > .check-same > p {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 5px 0;
+}
+section.buy > form > .payment-info > li > .check-same > p > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 21px;
+  height: 21px;
+  background-image: url(./../images/emptycircle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+section.buy > form > .payment-info > li > .check-same > p > input:checked {
+  background-image: url(./../images/checkedcircle.png);
+}
+section.buy > form > .payment-info > li > .check-same > p > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 70px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li:last-of-type {
+  border-bottom: none;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li > h4 {
+  width: 180px;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty > input {
+  outline: none;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #33afe9;
+  border-right: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty > .btn-updown {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 15px;
+  border: 1px solid #33afe9;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty > .btn-updown > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  font-size: 14px;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty > .btn-updown > button:hover {
+  color: #fff;
+  background-color: #1a6080;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li .updown-qty > .btn-updown > button:first-child {
+  border-bottom: 1px solid #33afe9;
+}
+section.buy > form > .payment-info > li > ol.buy-products > li > img {
+  display: block;
+  height: 120px;
+  box-shadow: 1px 1px 2px #ddd;
+}
+section.buy > form > .payment-info > li > ol > li {
+  width: 450px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+section.buy > form > .payment-info > li > ol > li:last-child {
+  margin-bottom: 0;
+}
+section.buy > form > .payment-info > li > ol > li #zipcode {
+  width: 20%;
+  margin-right: 5px;
+}
+section.buy > form > .payment-info > li > ol > li #address {
+  width: 65%;
+  margin-right: 5px;
+}
+section.buy > form > .payment-info > li > ol > li #address + button {
+  width: calc(15% - 10px);
+  color: #fdfdfd;
+  background-color: #33afe9;
+  border-radius: 5px;
+}
+section.buy > form > .payment-info > li > ol > li input[type=text] {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #b6e2f7;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+section.buy > form > .payment-info > li > ol > li input[type=text]:hover {
+  box-shadow: 1px 1px 1px #ddd;
+}
+section.buy > form > .payment-info > li > ol > li input[type=text]:focus {
+  border-color: #1a6080;
+}
+section.buy > form > .payment-info > li > .btns-pay {
+  display: flex;
+  flex-flow: row wrap;
+  width: 450px;
+}
+section.buy > form > .payment-info > li > .btns-pay > button {
+  width: 140px;
+  height: 40px;
+  margin: 0 15px 10px 0;
+  border: 1px solid #b6e2f7;
+  border-radius: 10px;
+}
+section.buy > form > .payment-info > li > .btns-pay > button.on {
+  border: 2px solid #1a6080;
+}
+section.buy > form > .payment-info > li > .btns-pay > button:nth-child(3n) {
+  margin-right: 0;
+}
+section.buy > form > .payment-info > li > .btns-pay > button:nth-child(4), section.buy > form > .payment-info > li > .btns-pay > button:nth-child(5) {
+  color: #1a6080;
+}
+section.buy > form > .payment-info > li > .btns-pay > button:nth-child(7), section.buy > form > .payment-info > li > .btns-pay > button:nth-child(8) {
+  margin-bottom: 0;
+}
+section.buy > form > .payment-info > li > .btns-pay > button:hover {
+  box-shadow: 1px 1px 1px #ddd;
+}
+section.buy > form > .buy-total {
+  position: sticky;
+  top: 100px;
+  left: 1000px;
+  width: 32%;
+  height: 300px;
+  margin: 30px 20px 0 0;
+  padding: 20px;
+  border: 1px solid #b6e2f7;
+  border-radius: 10px;
+}
+section.buy > form > .buy-total > li {
+  display: flex;
+  align-items: center;
+  margin: 15px 5px;
+  font-size: 16px;
+}
+section.buy > form > .buy-total > li.deleteline {
+  position: relative;
+  text-decoration: line-through;
+}
+section.buy > form > .buy-total > li.deleteline:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  color: #1a6080;
+  content: "0원";
+}
+section.buy > form > .buy-total > li > span {
+  margin-left: 8px;
+}
+section.buy > form > .buy-total > li > button {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  color: #fdfdfd;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #33afe9;
+  border-radius: 5px;
+}
+section.buy > form > .buy-total > li > button:hover {
+  background-color: #1a6080;
+}
+section.buy > form > .buy-total > li > input {
+  width: 120px;
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #b6e2f7;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+section.buy > form > .buy-total > li > input:hover {
+  box-shadow: 1px 1px 1px #ddd;
+}
+section.buy > form > .buy-total > li > input:focus {
+  border-color: #1a6080;
+}
+section.buy > form > .buy-total > li > input + button {
+  width: 40px;
+  height: 28px;
+  margin: 0 3px 0 10px;
+  font-size: 14px;
+  background-color: #b6e2f7;
+}
+section.buy > form > .buy-total > li .usePointBtn.active {
+  background-color: #33afe9;
+  color: #fdfdfd;
+}/*# sourceMappingURL=buy01.css.map */

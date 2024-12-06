@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="MillkyWay" path="/" reloadable="true" source="org.eclipse.jst.jee.server:MillkyWay">
+    <!-- 추가적인 설정을 여기에 추가할 수 있습니다. -->
+</Context>
